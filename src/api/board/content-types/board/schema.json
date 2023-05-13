@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "boards",
+  "info": {
+    "singularName": "board",
+    "pluralName": "boards",
+    "displayName": "Board"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "admin::user"
+    }
+  }
+}
